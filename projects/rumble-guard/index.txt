@@ -1,7 +1,7 @@
 1:HL["/_next/static/media/162bf645eb375add-s.p.ttf","font",{"crossOrigin":"","type":"font/ttf"}]
 2:HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 3:HL["/_next/static/css/40edc083cf75bac5.css","style",{"crossOrigin":""}]
-0:["UK86qWqYdBUKklBmYfPqb",[[["",{"children":["projects",{"children":[["slug","rumble-guard","d"],{"children":["__PAGE__?{\"slug\":\"rumble-guard\"}",{}]}]}]},"$undefined","$undefined",true],"$L4",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/40edc083cf75bac5.css","precedence":"next","crossOrigin":""}]],"$L5"]]]]
+0:["8qHtBdF0wheu_SIG7W2RA",[[["",{"children":["projects",{"children":[["slug","rumble-guard","d"],{"children":["__PAGE__?{\"slug\":\"rumble-guard\"}",{}]}]}]},"$undefined","$undefined",true],"$L4",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/40edc083cf75bac5.css","precedence":"next","crossOrigin":""}]],"$L5"]]]]
 6:HL["/_next/static/css/ccb12de4c58e29a3.css","style",{"crossOrigin":""}]
 7:I[3192,["185","static/chunks/app/layout-7866a2a3e57cf6e0.js"],"Analytics"]
 8:I[6954,[],""]
