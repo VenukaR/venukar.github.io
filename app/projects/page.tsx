@@ -4,31 +4,14 @@ import { allProjects } from "contentlayer/generated";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 import { Article } from "./article";
-import { Redis } from "@upstash/redis";
 import { Eye } from "lucide-react";
 
-const redis = Redis.fromEnv();
-
-export const revalidate = 60;
-export default async function ProjectsPage() {
-  let views: Record<string, number> = {};
-  
-  try {
-    const viewsData = await redis.mget<number[]>(
-      ...allProjects.map((p) => ["pageviews", "projects", p.slug].join(":")),
-    );
-    views = viewsData.reduce((acc, v, i) => {
-      acc[allProjects[i].slug] = v ?? 0;
-      return acc;
-    }, {} as Record<string, number>);
-  } catch (error) {
-    console.log('Redis error, using default views');
-    // Default to 0 views if Redis fails
-    views = allProjects.reduce((acc, p) => {
-      acc[p.slug] = 0;
-      return acc;
-    }, {} as Record<string, number>);
-  }
+export default function ProjectsPage() {
+  // Static export - no Redis, all views set to 0
+  const views: Record<string, number> = allProjects.reduce((acc, p) => {
+    acc[p.slug] = 0;
+    return acc;
+  }, {} as Record<string, number>);
 
   const featured = allProjects.find((project) => project.slug === "rumble-guard") || allProjects[0];
   const top2 = allProjects.find((project) => project.slug === "portfolio") || allProjects[1];
