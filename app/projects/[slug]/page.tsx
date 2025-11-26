@@ -14,8 +14,6 @@ type Props = {
   };
 };
 
-const redis = Redis.fromEnv();
-
 export async function generateStaticParams(): Promise<Props["params"][]> {
   return allProjects
     .filter((p) => p.published)
@@ -32,8 +30,15 @@ export default async function PostPage({ params }: Props) {
     notFound();
   }
 
-  const views =
-    (await redis.get<number>(["pageviews", "projects", slug].join(":"))) ?? 0;
+  let views = 0;
+  try {
+    if (process.env.UPSTASH_REDIS_REST_URL && process.env.UPSTASH_REDIS_REST_TOKEN) {
+      const redis = Redis.fromEnv();
+      views = (await redis.get<number>(["pageviews", "projects", slug].join(":"))) ?? 0;
+    }
+  } catch (error) {
+    console.log('Redis not available, using default views');
+  }
 
   return (
     <div className="bg-gradient-to-br from-purple-900 via-blue-900 to-cyan-900 min-h-screen">

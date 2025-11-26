@@ -5,6 +5,7 @@ import { Metadata } from "next";
 import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://venukar.github.io'),
   title: {
     default: "Venuka Ranasinghe - Computer Science Student",
     template: "%s | Venuka Ranasinghe",
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
     title: "Venuka Ranasinghe - Computer Science Student",
     description:
       "22-year-old Computer Science undergraduate in final year, passionate about building innovative software solutions and exploring cutting-edge technologies.",
-    url: "https://venukar.com",
+    url: "https://venukar.github.io",
     siteName: "Venuka Ranasinghe Portfolio",
     images: [
       {
