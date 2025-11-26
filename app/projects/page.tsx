@@ -5,6 +5,18 @@ import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 import { Article } from "./article";
 import { Eye } from "lucide-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Projects - Venuka Ranasinghe",
+  description: "Explore my software development projects including Rumble Guard, Learning Management System, and portfolio website. Built with React, Next.js, and modern technologies.",
+  openGraph: {
+    title: "Projects - Venuka Ranasinghe",
+    description: "Explore my software development projects including Rumble Guard, LMS, and more.",
+    url: "https://venukar.github.io/projects",
+    type: "website",
+  },
+};
 
 export default function ProjectsPage() {
   // Static export - no Redis, all views set to 0

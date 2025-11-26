@@ -5,6 +5,8 @@ import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 import Image from "next/image";
 
+// Metadata is set in layout as this is a client component
+
 const socials = [
 	{
 		icon: <Github size={20} />,

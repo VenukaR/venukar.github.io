@@ -1,6 +1,12 @@
 import Link from "next/link";
 import React from "react";
 import Particles from "./components/particles";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Home",
+  description: "Welcome to Venuka Ranasinghe's portfolio. Final year Computer Science student at IIT (University of Westminster), specializing in full-stack development and innovative software solutions.",
+};
 
 const navigation = [
   { name: "Projects", href: "/projects" },
