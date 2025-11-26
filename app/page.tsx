@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 
 const navigation = [
   { name: "Projects", href: "/projects" },
+  { name: "Resume", href: "/resume" },
   { name: "Contact", href: "/contact" },
 ];
 

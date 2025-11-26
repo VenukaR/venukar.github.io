@@ -1,5 +1,5 @@
 "use client";
-import { Github, Mail, Twitter, Linkedin, MapPin, Calendar, GraduationCap, Code2, Award, BookOpen, Briefcase, Heart, Trophy, FileCheck } from "lucide-react";
+import { Github, Mail, Twitter, Linkedin, MapPin, Calendar, GraduationCap, Code2, Award, BookOpen, Briefcase, Heart, Trophy, FileCheck, Phone } from "lucide-react";
 import Link from "next/link";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
@@ -229,6 +229,15 @@ export default function Example() {
 									<div className="text-left">
 										<p className="text-xs text-zinc-500">Current Project</p>
 										<p className="text-sm font-medium">Rumble Guard</p>
+									</div>
+								</div>
+								<div className="flex items-center gap-3 text-zinc-300 bg-zinc-900/50 p-3 rounded-lg border border-zinc-800 sm:col-span-2">
+									<Phone className="w-5 h-5 text-zinc-400" />
+									<div className="text-left">
+										<p className="text-xs text-zinc-500">Mobile</p>
+										<a href="tel:+94123456789" className="text-sm font-medium hover:text-zinc-100 transition-colors">
+											+94 12 345 6789
+										</a>
 									</div>
 								</div>
 							</div>
