@@ -7,6 +7,10 @@ const nextConfig = {
 		mdxRs: true,
 	},
 	output: 'export',
+	images: {
+		unoptimized: true,
+	},
+	trailingSlash: true,
 };
 
 export default withContentlayer(nextConfig);
