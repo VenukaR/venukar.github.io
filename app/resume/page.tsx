@@ -69,7 +69,7 @@ export default function ResumePage() {
 					</Card>
 
 					{/* Instructions */}
-					<div className="mt-8 p-6 bg-zinc-900/50 border border-zinc-800 rounded-lg">
+					{/* <div className="mt-8 p-6 bg-zinc-900/50 border border-zinc-800 rounded-lg">
 						<h3 className="text-lg font-semibold text-zinc-200 mb-3 flex items-center gap-2">
 							<FileText className="w-5 h-5" />
 							How to Add Your Resume
@@ -92,7 +92,7 @@ export default function ResumePage() {
 								<span>The resume will appear here automatically</span>
 							</li>
 						</ol>
-					</div>
+					</div> */}
 				</div>
 			</div>
 		</div>

@@ -161,9 +161,9 @@ export default function Example() {
 								{/* Profile image container */}
 								<div className="relative w-56 h-56 rounded-full overflow-hidden border-4 border-zinc-500 bg-zinc-900 shadow-2xl">
 									{/* Placeholder - Replace with your image */}
-									<div className="w-full h-full bg-gradient-to-br from-zinc-800 via-zinc-700 to-zinc-900 flex items-center justify-center">
+									{/* <div className="w-full h-full bg-gradient-to-br from-zinc-800 via-zinc-700 to-zinc-900 flex items-center justify-center">
 										<span className="text-8xl font-bold text-zinc-300 font-display">VR</span>
-									</div>
+									</div> */}
 									{/* 
 									To use your image:
 									1. Add your photo to /public/ folder (e.g., profile.jpg)
@@ -171,7 +171,7 @@ export default function Example() {
 									3. Remove or comment the placeholder div above
 									*/}
 									<Image
-										src="img/profile.png"
+										src="/img/profile.png"
 										alt="Venuka Ranasinghe"
 										fill
 										className="object-cover"

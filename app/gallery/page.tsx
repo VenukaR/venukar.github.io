@@ -8,7 +8,13 @@ import { useState, useEffect } from "react";
 // Add your gallery images here
 const galleryImages = [
 	{
-		src: "/gallery/award-ceremony.jpg",
+		src: "/gallery/23.jpeg",
+		alt: "Award Ceremony - Receiving Certificate",
+		title: "Award Ceremony",
+		description: "Receiving certificate of achievement",
+	},
+    	{
+		src: "/gallery/29.jpeg",
 		alt: "Award Ceremony - Receiving Certificate",
 		title: "Award Ceremony",
 		description: "Receiving certificate of achievement",
@@ -123,7 +129,7 @@ export default function GalleryPage() {
 						</div>
 
 						{/* Instructions */}
-						<div className="mt-12 p-6 bg-zinc-900/50 border border-zinc-800 rounded-lg">
+						{/* <div className="mt-12 p-6 bg-zinc-900/50 border border-zinc-800 rounded-lg">
 							<h3 className="text-lg font-semibold text-zinc-200 mb-3 flex items-center gap-2">
 								<Camera className="w-5 h-5" />
 								How to Add More Images
@@ -146,7 +152,7 @@ export default function GalleryPage() {
 									<span>Rebuild and redeploy your website</span>
 								</li>
 							</ol>
-						</div>
+						</div> */}
 					</div>
 				) : (
 					<div className="max-w-6xl mx-auto">
