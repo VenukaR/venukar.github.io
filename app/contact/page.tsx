@@ -170,13 +170,13 @@ export default function Example() {
 									2. Uncomment the Image component below
 									3. Remove or comment the placeholder div above
 									*/}
-									{/* <Image
-										src="/profile.jpg"
+									<Image
+										src="img/profile.png"
 										alt="Venuka Ranasinghe"
 										fill
 										className="object-cover"
 										priority
-									/> */}
+									/>
 								</div>
 
 								{/* Scanning line effect */}
@@ -236,7 +236,7 @@ export default function Example() {
 									<div className="text-left">
 										<p className="text-xs text-zinc-500">Mobile</p>
 										<a href="tel:+94123456789" className="text-sm font-medium hover:text-zinc-100 transition-colors">
-											+94 12 345 6789
+											+94 72 034 4517
 										</a>
 									</div>
 								</div>

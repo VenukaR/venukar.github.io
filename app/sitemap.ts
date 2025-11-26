@@ -11,7 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     }))
 
-  const routes = ['', '/projects', '/resume', '/contact'].map((route) => ({
+  const routes = ['', '/projects', '/resume', '/gallery', '/contact'].map((route) => ({
     url: `https://venukar.github.io${route}`,
     lastModified: new Date(),
     changeFrequency: 'weekly' as const,
