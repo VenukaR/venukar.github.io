@@ -12,7 +12,7 @@ const navigation = [
   { name: "Projects", href: "/projects" },
   { name: "Resume", href: "/resume" },
   { name: "Gallery", href: "/gallery" },
-  { name: "About", href: "/About" },
+  { name: "About", href: "/contact" },
 ];
 
 export default function Home() {
