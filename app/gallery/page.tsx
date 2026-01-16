@@ -9,24 +9,49 @@ import { useState, useEffect } from "react";
 const galleryImages = [
 	{
 		src: "/gallery/23.jpeg",
-		alt: "Award Ceremony - Receiving Certificate",
-		title: "Award Ceremony",
-		description: "Receiving certificate of achievement",
+		alt: "",
+		title: "",
+		description: "",
 	},
     	{
 		src: "/gallery/29.jpeg",
-		alt: "Award Ceremony - Receiving Certificate",
-		title: "Award Ceremony",
-		description: "Receiving certificate of achievement",
+		alt: "",
+		title: "",
+		description: "",
 	},
-	// Add more images as you upload them to /public/gallery/
-	// Example:
-	// {
-	//   src: "/gallery/hackathon.jpg",
-	//   alt: "Hackathon Event",
-	//   title: "Tech Hackathon 2024",
-	//   description: "Participating in university hackathon",
-	// },
+	{
+		src: "/gallery/1.JPG",
+		alt: "",
+		title: "",
+		description: "",
+	},
+	{
+		src: "/gallery/2.jpg",
+		alt: "",
+		title: "",
+		description: "",
+	},
+	{
+		src: "/gallery/3.JPG",
+		alt: "",
+		title: "",
+		description: "",
+	},
+	{
+		src: "/gallery/4.jpeg",
+		alt: "",
+		title: "",
+		description: "",
+	},
+	{
+		src: "/gallery/5.jpeg",
+		alt: "",
+		title: "",
+		description: "",
+	},
+	
+	
+	
 ];
 
 export default function GalleryPage() {

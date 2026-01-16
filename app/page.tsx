@@ -12,7 +12,7 @@ const navigation = [
   { name: "Projects", href: "/projects" },
   { name: "Resume", href: "/resume" },
   { name: "Gallery", href: "/gallery" },
-  { name: "Contact", href: "/contact" },
+  { name: "About", href: "/About" },
 ];
 
 export default function Home() {
@@ -46,15 +46,7 @@ export default function Home() {
           Computer Science Undergraduate
         </h2>
         <p className="text-sm text-zinc-500">
-          22-year-old final year CS student passionate about building innovative solutions.
-          Currently developing{" "}
-          <Link
-            href="/projects"
-            className="underline duration-500 hover:text-zinc-300"
-          >
-            Rumble Guard
-          </Link>{" "}
-          and exploring cutting-edge technologies.
+        Final-year Computer Science student focused on building real-world, AI-driven solutions. Currently developing Rumble Guard and actively exploring cutting-edge technologies across AI, mobile, and full-stack systems.
         </p>
       </div>
     </div>

@@ -59,7 +59,7 @@ export default function ProjectsPage() {
         <div className="grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2 ">
           {featured && (
             <Card>
-              <Link href={`/projects/${featured.slug}`}>
+              <a href={featured.url ?? (featured.repository ? `https://github.com/${featured.repository}` : "#")} target="_blank" rel="noopener noreferrer">
                 <article className="relative w-full h-full p-4 md:p-8">
                   <div className="flex items-center justify-between gap-2">
                     <div className="text-xs text-zinc-100">
@@ -92,11 +92,11 @@ export default function ProjectsPage() {
                   </p>
                   <div className="absolute bottom-4 md:bottom-8">
                     <p className="hidden text-zinc-200 hover:text-zinc-50 lg:block">
-                      Read more <span aria-hidden="true">&rarr;</span>
+                      View on GitHub <span aria-hidden="true">&rarr;</span>
                     </p>
                   </div>
                 </article>
-              </Link>
+              </a>
             </Card>
           )}
 

@@ -1,4 +1,4 @@
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { allProjects } from "contentlayer/generated";
 import { Mdx } from "@/app/components/mdx";
 import { Header } from "./header";
@@ -60,24 +60,11 @@ export default async function PostPage({ params }: Props) {
     notFound();
   }
 
-  let views = 0;
-  try {
-    if (process.env.UPSTASH_REDIS_REST_URL && process.env.UPSTASH_REDIS_REST_TOKEN) {
-      const redis = Redis.fromEnv();
-      views = (await redis.get<number>(["pageviews", "projects", slug].join(":"))) ?? 0;
-    }
-  } catch (error) {
-    console.log('Redis not available, using default views');
+  const externalUrl = project.url ?? (project.repository ? `https://github.com/${project.repository}` : undefined);
+  if (externalUrl) {
+    redirect(externalUrl);
   }
 
-  return (
-    <div className="bg-gradient-to-br from-purple-900 via-blue-900 to-cyan-900 min-h-screen">
-      <Header project={project} views={views} />
-      <ReportView slug={project.slug} />
-
-      <article className="px-4 py-12 mx-auto prose prose-invert prose-quoteless prose-cyan">
-        <Mdx code={project.body.code} />
-      </article>
-    </div>
-  );
+  // If no external URL is available, fallback to notFound
+  notFound();
 }

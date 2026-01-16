@@ -10,7 +10,7 @@ import Image from "next/image";
 const socials = [
 	{
 		icon: <Github size={20} />,
-		href: "https://github.com/venukaranasinghe",
+		href: "https://github.com/VenukaR",
 		label: "Github",
 		handle: "venukaranasinghe",
 	},
@@ -22,16 +22,22 @@ const socials = [
 	},
 	{
 		icon: <Linkedin size={20} />,
-		href: "https://linkedin.com/in/venuka-ranasinghe",
+		href: "https://www.linkedin.com/in/venukaranasinghe/",
 		label: "LinkedIn",
-		handle: "venuka-ranasinghe",
+		handle: "venukaranasinghe",
 	},
 	{
 		icon: <Mail size={20} />,
-		href: "mailto:venuka.ranasinghe@example.com",
+		href: "mailto:venuka.ranasinghe@gmail.com",
 		label: "Email",
-		handle: "venuka.ranasinghe@example.com",
+		handle: "venuka.ranasinghe@gmail.com",
 	},
+	{
+		icon: <BookOpen size={20} />,
+		href: "https://medium.com/@venukaranasinghe",
+		label: "Medium",
+		handle: "Medium Blog",
+	}
 ];
 
 const education = [
@@ -40,69 +46,114 @@ const education = [
 		degree: "BSc (Hons) Computer Science",
 		partner: "University of Westminster, UK",
 		period: "2022 - Present",
-		status: "Final Year",
+		status: "Undergraduate",
 		highlights: [
-			"Specializing in Software Engineering and AI",
-			"Active participant in tech societies",
-			"Working on innovative projects like Rumble Guard"
+			"Undergraduate reading Computer Science under the University of Westminster curriculum",
+			"Actively involved in national-level hackathons and competitive tech events",
+			"Developed multiple AI-driven, web, and mobile applications as academic and group projects",
+			"Contributor to award-winning student projects including Rumble Guard"
+		]
+	},
+	{
+		institution: "Ananda College, Colombo",
+		degree: "GCE Advanced Level – Physical Science Stream",
+		period: "2019 - 2021",
+		status: "Completed",
+		highlights: [
+			"Subjects: Combined Mathematics, Physics, Chemistry"
+		]
+	},
+	{
+		institution: "Ananda College, Colombo",
+		degree: "GCE Ordinary Level",
+		period: "2018",
+		status: "Completed",
+		highlights: [
+			"Results: 8 As and 1 B"
 		]
 	}
 ];
 
+
 const awards = [
 	{
-		title: "Dean's List",
-		organization: "IIT",
-		year: "2023",
-		description: "Recognition for academic excellence"
-	},
-	{
-		title: "Best Innovation Award",
-		organization: "University Hackathon",
+		title: "Hult Prize – Semi Finalist",
+		organization: "Dubai Summit",
 		year: "2024",
-		description: "For Rumble Guard project"
+		description: "Selected as a semi-finalist at the Hult Prize Dubai Summit, competing internationally with a startup-focused solution addressing real-world challenges through innovation and entrepreneurship."
 	},
 	{
-		title: "Outstanding Student Award",
+		title: "Rumble Guard – Cutting Edge '24 Exhibitor",
+		organization: "Cutting Edge '24",
+		year: "2024",
+		description: "Exhibited Rumble Guard, a technology-driven solution addressing human–elephant conflict in Sri Lanka, showcasing applied engineering, mobile development, and AI-based detection systems."
+	},
+	{
+		title: "DHack '24 – Winner",
+		organization: "DHack '24",
+		year: "2024",
+		description: "Won DHack '24 by delivering a high-impact technical solution under competitive time constraints, demonstrating strong problem-solving, execution speed, and teamwork."
+	},
+	{
+		title: "IIT Awards – Excellence Award",
+		organization: "Informatics Institute of Technology",
+		year: "2024",
+		description: "Received the Excellence Award from Informatics Institute of Technology for outstanding undergraduate performance in national and international competitions."
+	},
+	{
+		title: "Undergraduate Merit Award",
 		organization: "IIT",
-		year: "2023",
-		description: "Academic and extracurricular excellence"
+		year: "2024",
+		description: "Awarded for consistent high-level performance in recognized competitions, reflecting technical depth, innovation, and competitive excellence."
+	},
+	{
+		title: "IIT Awards – Excellence Award",
+		organization: "Informatics Institute of Technology",
+		year: "2025",
+		description: "Awarded a second consecutive Excellence Award, reinforcing sustained excellence and continued impact in competitions and technical achievements."
+	},
+	{
+		title: "Undergraduate Merit Award",
+		organization: "IIT",
+		year: "2025",
+		description: "Recognized again for competitive performance, indicating consistency rather than a one-off success."
 	}
 ];
 
 const certificates = [
 	{
-		name: "AWS Certified Cloud Practitioner",
-		issuer: "Amazon Web Services",
-		year: "2024"
-	},
-	{
-		name: "Full Stack Web Development",
-		issuer: "Coursera",
-		year: "2023"
-	},
-	{
-		name: "Python for Data Science",
-		issuer: "IBM",
-		year: "2023"
-	},
-	{
-		name: "React & Next.js Development",
-		issuer: "Udemy",
-		year: "2024"
+		name: "Graphic design and multimedia program (SLIIT)",
+		issuer: "SLIIT",
+		year: "2022"
 	}
 ];
 
 const experiences = [
-	{
-		role: "Software Engineering Intern",
-		company: "Tech Startup",
-		period: "Jun 2024 - Aug 2024",
-		description: "Developed full-stack applications using React and Node.js",
+		{
+		role: "Software Engineer Intern",
+		company: "Inforwaves (Pvt) Ltd",
+		period: "Aug 2024 - Aug 2025",
+		description:
+			"Worked on production-grade AI chatbot platforms and real-time agentic systems for enterprise clients, focusing on scalable front-end architectures and AI-driven user experiences.",
 		achievements: [
-			"Built 3 client-facing applications",
-			"Improved system performance by 40%",
-			"Mentored 2 junior developers"
+			"Spearheaded front-end development of an enterprise AI chatbot platform (Dialog AI) using Next.js and Tailwind CSS",
+			"Enhanced UX and scalability of Dialog Govimuthuru and Dialog Yeheli chatbots using Svelte and Gemini-powered text-to-speech",
+			"Prototyped a LiveKit-integrated multi-agent real-time framework for multimodal and voice AI agents",
+			"Built contextual memory and retrieval systems using LangChain and LanceDB",
+			"Delivered a Flutter-based mobile application serving 5,000+ active users with real-time notifications and authentication"
+		]
+	},
+	{
+		role: "Part-Time Product & Idea Strategist",
+		company: "Freelance",
+		period: "2020 - Present",
+		description:
+			"Led early-stage product strategy, market validation, and technical ideation for startups and local businesses.",
+		achievements: [
+			"Led client pitching and partnership discussions to onboard local businesses",
+			"Conducted market research, ROI analysis, and due diligence for startup ideas",
+			"Created investor pitch decks and supported product strategy and go-to-market planning",
+			"Contributed to branding, marketing strategy, and visual design for early-stage products"
 		]
 	},
 	{
@@ -120,22 +171,32 @@ const experiences = [
 
 const volunteering = [
 	{
-		role: "Tech Society President",
-		organization: "IIT Computer Science Society",
-		period: "2023 - Present",
-		description: "Leading workshops and hackathons for students"
+		role: "Volunteer",
+		organization: "Pearl Protectors",
+		period: "Present",
+		description:
+			"Contributed to environmental conservation initiatives focused on protecting marine ecosystems through community-driven activities."
 	},
 	{
-		role: "Coding Mentor",
-		organization: "Code for Good",
-		period: "2023 - Present",
-		description: "Teaching programming to underprivileged students"
+		role: "Build with AI Volunteer",
+		organization: "Google Developer Groups (GDG)",
+		period: "2025",
+		description:
+			"Supported Build with AI initiatives by assisting with community events, workshops, and AI-focused developer engagement activities."
 	},
 	{
-		role: "Event Organizer",
-		organization: "IIT Tech Fest",
-		period: "2024",
-		description: "Organized university's largest tech event with 500+ participants"
+		role: "Leo Member",
+		organization: "Leo Club of Colombo Griffins | District 306 C2",
+		period: "2023 - Present",
+		description:
+			"Participated in leadership, community service, and professional development initiatives organized by the Leo Club."
+	},
+	{
+		role: "Member",
+		organization: "Rotaract Club of IIT",
+		period: "2023 - 2025",
+		description:
+			"Engaged in social service, professional development, and collaborative projects within the university Rotaract community."
 	}
 ];
 
@@ -171,7 +232,7 @@ export default function Example() {
 									3. Remove or comment the placeholder div above
 									*/}
 									<Image
-										src="/img/profile.png"
+										src="/img/profile.jpg"
 										alt="Venuka Ranasinghe"
 										fill
 										className="object-cover"

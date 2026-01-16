@@ -8,8 +8,9 @@ type Props = {
 };
 
 export const Article: React.FC<Props> = ({ project, views }) => {
+	const externalUrl = project.url ?? (project.repository ? `https://github.com/${project.repository}` : undefined);
 	return (
-		<Link href={`/projects/${project.slug}`}>
+		<a href={externalUrl} target="_blank" rel="noopener noreferrer">
 			<article className="p-4 md:p-8">
 				<div className="flex justify-between gap-2 items-center">
 					<span className="text-xs duration-1000 text-zinc-200 group-hover:text-white group-hover:border-zinc-200 drop-shadow-orange">
@@ -35,6 +36,6 @@ export const Article: React.FC<Props> = ({ project, views }) => {
 					{project.description}
 				</p>
 			</article>
-		</Link>
+		</a>
 	);
 };
