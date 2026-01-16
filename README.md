@@ -51,3 +51,7 @@ Feel free to reach out through any of these platforms:
 - LinkedIn: [venuka-ranasinghe](https://linkedin.com/in/venuka-ranasinghe)
 - Twitter: [@venuka_r](https://twitter.com/venuka_r)
 - Email: venuka.ranasinghe@example.com
+
+
+
+cd "/Users/venukar/Documents/Development Project/chronark.com-main" && npx gh-pages -d out -b gh-pages
